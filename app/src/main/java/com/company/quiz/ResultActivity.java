@@ -14,6 +14,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private TextView textView;
     private Button button;
+    private Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +36,14 @@ public class ResultActivity extends AppCompatActivity {
             }
         });
 
+
+        button2 = findViewById(R.id.btn_wrong_right);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ResultActivity.this,AnswersActivity.class));
+                finish();
+            }
+        });
     }
 }

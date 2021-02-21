@@ -152,8 +152,8 @@ public class QuestionsActivity extends AppCompatActivity {
         int currentQuestionAnswer = questionCollection[mQuestionIndex].getCorrectAnswer();
         if(currentQuestionAnswer == userGuess){
             mUserScore=mUserScore+1;
-            questionNumber = questionNumber + 1;
         }
+        questionNumber = questionNumber + 1;
     }
 
 }
